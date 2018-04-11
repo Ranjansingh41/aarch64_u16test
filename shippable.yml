@@ -3,9 +3,9 @@
 jobs:
  - name: aarch64_u16
    type: runSh
-   runtime:
-     nodePool: aarch_64ubuntu16_04BYON 
-     container: true
+   #runtime:
+     #nodePool: aarch_64ubuntu16_04BYON 
+     #container: true
    steps:
      - TASK:
          runtime:
