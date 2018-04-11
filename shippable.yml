@@ -1,1 +1,30 @@
 
+
+jobs:
+ - name: aarch64_u16
+   type: runSh
+   steps:
+     - TASK:
+         runtime:
+           options:
+             imageName: "drydock/aarch64_u16"
+             imageTag: master
+         script:
+         - java -version
+         - nodejs --version
+         - source /usr/local/rvm/scripts/rvm
+         - ruby -v
+         - python -V
+         - git --version
+         - gcloud version
+         - kubectl version --client
+         - aws --version
+         - eb --version
+         - ansible --version
+         - pip show boto
+         - pip show boto3
+         - pip show apache-libcloud
+         - pip show azure
+         - pip show dopy
+         - packer --version
+         - jq --version
