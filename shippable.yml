@@ -29,5 +29,5 @@ jobs:
          - pip show apache-libcloud
          - pip show azure
          - pip show dopy
-         - packerio --version
+         - packer.io --version
          - jq --version
